@@ -1,7 +1,8 @@
 # INFO
 - PlatformIO + VisualStudio Code
-- Finální projekt v adresáři "Final V1"
-- Projekt ještě není dokončený
+- Finální projekt se skládá ze složek "Reciever" a "Sender"
+- ostatní složky jsou buď ostatní kód, nebo obrázky
+- Projekt je funkční, chybí lehké úpravy
 
 # Ročníkový projekt (Sledovací obojek pro psy) - část 1. Návrh projektu
 
