@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ESP32 Web Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-16">
+  <link rel="icon" href="data:">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+</head>
+
+<body id="body1">
+  <header>
+    <h1>Data získané z GPS zařízení</h1>
+  </header>
+  <div class="row">
+    <div class="column_sideL">
+      <a style="color: transparent;">.</a>
+    </div>
+    <div class="column">
+      <div id="vypisovani">
+        <h2>, </h2>
+        <p>Zeměpisná Délka: <strong id="lon">  </strong></p>
+        <p>Zeměpisná Šířka <strong id="lat">  </strong></p>
+        <p>Výška: <strong>  </strong> metrů nad mořem</p>
+        <p>Síla GPS signálu: <strong id="satelity"></strong></p>
+        <p>Odpor signálu mezi zařízeními: <strong id="lora"></strong></p>
+      </div>
+      <div id="map"></div>
+      
+      <p id="popisek">Síla GPS: čím větší, tím lepší</p>
+      <p id="popisek">Rušení signálu mezi zařízeními (Způsobuje vzdálenost, nebo špatný terén): čím větší, tím horší</p>
+    </div>
+    <div class="column_sideR">
+      <a style="color: transparent">.</a>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="script.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
