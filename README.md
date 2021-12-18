@@ -1,7 +1,8 @@
 # INFO
 - PlatformIO + VisualStudio Code
-- Finální projekt v adresáři "Final V1"
-- Projekt ještě není dokončený
+- Finální projekt se skládá ze složek "Reciever" a "Sender"
+- ostatní složky jsou buď ostatní kód, nebo obrázky
+- Projekt je funkční, chybí lehké úpravy
 
 # Ročníkový projekt (Sledovací obojek pro psy) - část 1. Návrh projektu
 
@@ -148,7 +149,9 @@ IV. Konečný Harmonogram
 * 30.11.2021 - úprava Githubu, sepsání problémů + řešení
 * 03.12.2021 - úprava komunikace mezi ESP32 zařízeními
 * 12.12.2021 - automatické obnovování textu na webu pomocí jquery
-* 14.12.2020 - vyřešení maximální velikosti SPIFFS, nahrání map na ESP
+* 14.12.2021 - vyřešení maximální velikosti SPIFFS, nahrání map na ESP
+* 17.12.2021 - snaha o zobrazení mapy na webserveru
+* 18.12.2021 - webserver zobrazuje mapu, změněno vytváření wifi na připojení-se na wifi
 
 # Ročníkový projekt (Sledovací obojek pro psy) - část 2. Sestavování
 
@@ -206,7 +209,7 @@ V. Výpis informací na Webový server
 
 VI. Přístup uživatele
 ---------------------
-* Esp vytvoří vlastní wifi 
+* Esp vytvoří vlastní wifi // změna na: esp se připojí na wifi
 * Uživatel se může připojit, zadat do webserveru ip adresu a připojit se na webovou stránku
 * IP adresa, heslo a ssid je vypsáno na Espčku, aby se uživatel mohl připojit
 
@@ -218,7 +221,7 @@ I. Využití informací z LoRa zařízení
 * Převedení RSSI na srozumitelnou informaci (perfektní, dobrý, špatný signál...)
 * Vytvoření kompasu ? pomocí informací z webového prohlížeče
 * Vypisování času na webu z GPS 
-* 
+* Pozice se zobrazuje na mapě
 
 II. Dosah LoRa zařízení + testy komunikace
 ------------------------------------------
@@ -257,6 +260,11 @@ Odkazy a použíté technologie:
 * rest api - https://github.com/superucitelka/SmartWatch-REST
 * partitions - https://github.com/espressif/arduino-esp32/tree/master/tools/partitions
 * platformio, partitions - https://docs.platformio.org/en/latest/platforms/espressif32.html#partition-tables
+* mapa1 - https://stackoverflow.com/questions/9912145/leaflet-how-to-find-existing-markers-and-delete-markers
+* mapy2 - https://www.mapbox.com
+* leaflet - https://leafletjs.com/examples/quick-start/
+* leaflet2 - https://stackoverflow.com/questions/43743097/showing-an-offline-osm-map-file-suggestion-an-mb-tiles-file-with-js-library
+* size of partitions - https://stackoverflow.com/questions/36413423/mapbox-offline-storage-size
 
 
 
