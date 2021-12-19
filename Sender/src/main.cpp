@@ -40,27 +40,33 @@ void loop()
 
     //duvod, proc je to v podminkach je, protože potřebuju aby výsledek byl ve dvojciferném výsledku př: 12:42:33
     //když je číslo menší než 1, je výpis: 9:5:3, po úpravě to vyjde 09:05:03
-    LoRa.beginPacket();
-    if(gps.location.lng() < 1){
-      LoRa.print(00.0000000);
+    LoRa.beginPacket(); //začíná tvořit jeden packet, který pak bude odeslán pomocí LoRy
+    if (gps.location.lng() < 1.00)
+    {
+      LoRa.print(00.0000000); //zapíše informaci do packetu
     }
-    else{
+    else
+    {
       LoRa.print(gps.location.lng(), 7);
     }
-    
-    if(gps.location.lat() < 1){
+
+    if (gps.location.lat() < 1.00)
+    {
       LoRa.print(00.0000000);
     }
-    else{
+    else
+    {
       LoRa.print(gps.location.lat(), 7);
     }
-    if(gps.altitude.meters() < 1){
+    if (gps.altitude.meters() < 1.00)
+    {
       LoRa.print(100.00);
     }
-    else{
+    else
+    {
       LoRa.print(gps.altitude.meters());
     }
-    
+
     if (gps.time.hour() < 10)
     {
       LoRa.print("0");
@@ -116,7 +122,7 @@ void loop()
     }
     LoRa.print(gps.date.year());
     LoRa.println(gps.satellites.value());
-    LoRa.endPacket();
+    LoRa.endPacket(); //ukončí a odešle packet
     LoRaMillis = TedMillis;
   }
 }

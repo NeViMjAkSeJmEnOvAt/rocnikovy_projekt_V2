@@ -31,21 +31,6 @@ strong{
 #body1 {
   background-image: radial-gradient(rgba(56, 252, 252, 0.822), rgb(137, 172, 173))
 }
-.column {
-  float: left;
-  width: 80%;
-  background-color: rgba(255, 255, 255, 0.815);
-}
-.column_sideL {
-  float: left;
-  width: 10%;
-  background-color: transparent	;
-}
-.column_sideR {
-  float: right;
-  width: 10%;
-  background-color: transparent;
-}
 #popisek {
   font-size: 10px;
 }
