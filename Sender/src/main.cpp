@@ -30,7 +30,7 @@ void loop()
   if (TedMillis - LoRaMillis >= intervalLoRa)
   {
     Serial.print("LAT=");
-    Serial.println(gps.location.lat(), 7); //vypise se 7 pozic cisla
+    Serial.println(gps.location.lat(), 7); //vypíše se 7 pozic čísla
     Serial.print("LONG=");
     Serial.println(gps.location.lng(), 7);
     Serial.print("ALT=");
@@ -64,12 +64,12 @@ void loop()
     }
     else
     {
-      LoRa.print(gps.altitude.meters());
+      LoRa.print(gps.altitude.meters()); //uloží do packetu informaci o nadmořské výšce
     }
 
-    if (gps.time.hour() < 10)
+    if (gps.time.hour() < 10) 
     {
-      LoRa.print("0");
+      LoRa.print("0"); 
       LoRa.print(gps.time.hour() + 1);
       LoRa.print(":");
     }
@@ -78,15 +78,15 @@ void loop()
       LoRa.print(gps.time.hour() + 1);
       LoRa.print(":");
     }
-    if (gps.time.minute() < 10)
+    if (gps.time.minute() < 10) //pokud je čas menší než 10
     {
-      LoRa.print("0");
-      LoRa.print(gps.time.minute());
-      LoRa.print(":");
+      LoRa.print("0"); //napíše se 0
+      LoRa.print(gps.time.minute()); //napíše se čas
+      LoRa.print(":"); 
     }
-    else
+    else //jinak 
     {
-      LoRa.print(gps.time.minute());
+      LoRa.print(gps.time.minute()); //se vypíše celý čas
       LoRa.print(":");
     }
     if (gps.time.second() < 10)

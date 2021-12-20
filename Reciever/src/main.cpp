@@ -27,7 +27,7 @@ const long intervalDisplay = 2000; //interval ve kterém se bude funkce spoušt�
 const long intervalLoRa = 500;     //interval ve kterém se bude funkce spouštět pro LoRu
 unsigned long DisplayMillis, LoRaMillis = 0;
 
-AsyncWebServer server(80);
+AsyncWebServer server(80); //vytvoření serveru
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RST);
 
 String Parser(String gps, int x) //slouží k rozložení proudu dat získaných z "senderu"
@@ -109,11 +109,11 @@ void setup()
 {
   Serial.begin(115200);
   Heltec.begin(false /*DisplayEnable Enable*/, true /*Heltec.LoRa Disable*/, true /*Serial Enable*/, true /*PABOOST Enable*/, PASMO /*long BAND*/); //nastaveni hardwaru
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED)
+  WiFi.begin(ssid, password); //zapnutí wifi (připojení se na wifi pomocí údajů)
+  while (WiFi.status() != WL_CONNECTED) //dokud se wifi nepřipojí
   {
     delay(1000);
-    Serial.println("Connecting to WiFi..");
+    Serial.println("Connecting to WiFi.."); //vypiš connecting...
   }
   ////////////////display///////////////////////////////////////////////
 
