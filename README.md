@@ -152,6 +152,8 @@ IV. Konečný Harmonogram
 * 14.12.2021 - vyřešení maximální velikosti SPIFFS, nahrání map na ESP
 * 17.12.2021 - snaha o zobrazení mapy na webserveru
 * 18.12.2021 - webserver zobrazuje mapu, změněno vytváření wifi na připojení-se na wifi
+* 19.12.2021 - poslední úpravy kódu + poznámky programátora
+* 20.12.2021 - práce na dokumentaci
 
 # Ročníkový projekt (Sledovací obojek pro psy) - část 2. Sestavování
 
