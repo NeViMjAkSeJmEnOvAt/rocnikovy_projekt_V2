@@ -113,15 +113,15 @@ IV. Předpokládaný Harmonogram
 
 ### Druhá polovina Listopadu
 * Finální úpravy ✔️
-* Grafická úprava stránky ❌
+* Grafická úprava stránky ✔️
 * Udělat návrh obalu ❌
 
 ### Prosinec (Termín 30.12.2021)
 * Sepsat dokumentaci ❌
-* Sestavit hardware ❌
-* Debugování a chyby ❌
+* Sestavit hardware ✔️
+* Debugování a chyby ✔️
 * Vytisknout obal na 3d tiskárně ❌
-* Zbytek času na to, pokud něco nebudu stíhat 
+* Zbytek času na to, pokud něco nebudu stíhat ✔️
 
 IV. Konečný Harmonogram 
 -------------------------------------------
