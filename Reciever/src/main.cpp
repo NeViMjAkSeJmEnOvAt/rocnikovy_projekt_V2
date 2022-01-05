@@ -18,8 +18,8 @@
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 
-const char *ssid = "MK 2.4GHz"; //nazev wifi, na kterou se zařízení připojí
-char *password = "MK12345678";  //heslo
+const char *ssid = "wifi";      //nazev wifi, na kterou se zařízení připojí
+const char *password = "MK12345678"; //heslo
 char VyslednyText[2];
 String VypisovanyText;
 String VypisovanyText2;
@@ -80,7 +80,7 @@ String SilaSignalu(const int x) //funkce pro zjistovani sily signalu
 String processor(const String &var) //slouží k odesílání informací na webový server
 {
   if (var == "GPS_LON")
-  { //pokud se webserver zeptá na identifikátor GPS, bude mu poslán VypisovanyText
+  { //pokud se webserver zeptá na informaci o GPS_LON, bude mu poslán VypisovanyText
     return (Parser(VypisovanyText2, 1));
   }
   else if (var == "GPS_LAT")
@@ -109,8 +109,8 @@ void setup()
 {
   Serial.begin(115200);
   Heltec.begin(false /*DisplayEnable Enable*/, true /*Heltec.LoRa Disable*/, true /*Serial Enable*/, true /*PABOOST Enable*/, PASMO /*long BAND*/); //nastaveni hardwaru
-  WiFi.begin(ssid, password); //zapnutí wifi (připojení se na wifi pomocí údajů)
-  while (WiFi.status() != WL_CONNECTED) //dokud se wifi nepřipojí
+  WiFi.begin(ssid, password);                                                                                                                       //zapnutí wifi (připojení se na wifi pomocí údajů)
+  while (WiFi.status() != WL_CONNECTED)                                                                                                             //dokud se wifi nepřipojí
   {
     delay(1000);
     Serial.println("Connecting to WiFi.."); //vypiš connecting...
@@ -148,7 +148,7 @@ void setup()
 
   if (!SPIFFS.begin(true)) //pokud se spiffs nezapne, ohlásí se chyba
   {
-    Serial.println("An Error has occurred while mounting SPIFFS");
+    Serial.println("Nastal Error při spouštění SPIFFSU");
     display.setCursor(0, 0);
     display.clearDisplay();
     display.setTextColor(WHITE);
@@ -219,7 +219,7 @@ void loop()
       display.println(SilaSignalu(LoRa.packetRssi() * (-1)));
       display.setCursor(13, 20);
       display.print("IP: ");
-      display.println(WiFi.softAPIP());
+      display.println(WiFi.localIP());
       display.setCursor(13, 30);
       display.print("Wifi: ");
       display.println(ssid);
