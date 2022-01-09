@@ -2,7 +2,7 @@
 ## Finální projekt se skládá ze složek "Reciever" a "Sender", ostatní složky nejsou přímou součástí projektu
 - PlatformIO + VisualStudio Code
 - Projekt je dokončen s dokumentací
-- Reklamni video (https://drive.google.com/file/d/1D0vX1lWhuKkU8B6CtwogXKFZXaA0hK6G/view?usp=sharing)
+- Reklamni video >> https://drive.google.com/file/d/1D0vX1lWhuKkU8B6CtwogXKFZXaA0hK6G/view?usp=sharing
 
 # Ročníkový projekt (Sledovací obojek pro psy) - část 1. Návrh projektu
 
