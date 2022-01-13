@@ -2,6 +2,7 @@
 ## Finální projekt se skládá ze složek "Reciever" a "Sender", ostatní složky nejsou přímou součástí projektu
 - PlatformIO + VisualStudio Code
 - Projekt je dokončen s dokumentací
+- Reklamni video >> https://drive.google.com/file/d/1D0vX1lWhuKkU8B6CtwogXKFZXaA0hK6G/view?usp=sharing
 
 # Ročníkový projekt (Sledovací obojek pro psy) - část 1. Návrh projektu
 
@@ -113,13 +114,13 @@ IV. Předpokládaný Harmonogram
 ### Druhá polovina Listopadu
 * Finální úpravy ✔️
 * Grafická úprava stránky ✔️
-* Udělat návrh obalu ❌
+* Udělat návrh obalu ✔️
 
 ### Prosinec (Termín 30.12.2021)
-* Sepsat dokumentaci ❌
+* Sepsat dokumentaci ✔️
 * Sestavit hardware ✔️
 * Debugování a chyby ✔️
-* Vytisknout obal na 3d tiskárně ❌
+* Vytisknout obal na 3d tiskárně ✔️
 * Zbytek času na to, pokud něco nebudu stíhat ✔️
 
 IV. Konečný Harmonogram 
@@ -153,6 +154,7 @@ IV. Konečný Harmonogram
 * 18.12.2021 - webserver zobrazuje mapu, změněno vytváření wifi na připojení-se na wifi
 * 19.12.2021 - poslední úpravy kódu + poznámky programátora
 * 20.12.2021 - práce na dokumentaci
+* 27.12.2021 - 07.01.2022 - úpravy a práce na dokumentaci
 
 # Ročníkový projekt (Sledovací obojek pro psy) - část 2. Sestavování
 
@@ -227,6 +229,9 @@ I. Využití informací z LoRa zařízení
 II. Dosah LoRa zařízení + testy komunikace
 ------------------------------------------
 * první test dosál vzdálenosti asi 1,5km (terén docela nepřístupný)
+* druhý test dosáhl 900 metrů v lese
+* třetí test dosáhl 1300 metrů ve vesnici
+* čtvrtý test dosáhl 4000+ metrů v otevřeném prostředí
 
 Odkazy a použíté technologie:
 -----------------------------
