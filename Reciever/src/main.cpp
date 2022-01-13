@@ -239,3 +239,17 @@ void loop()
   }
   VypisovanyText = ""; //vynuluje vypisovaný text aby se nestakoval
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

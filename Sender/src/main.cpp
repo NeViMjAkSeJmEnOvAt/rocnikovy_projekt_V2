@@ -64,7 +64,7 @@ void loop()
     }
     else
     {
-      LoRa.print(gps.altitude.meters()); //uloží do packetu informaci o nadmořské výšce
+      LoRa.print(gps.altitude.meters());
     }
 
     if (gps.time.hour() < 10) 
@@ -126,3 +126,41 @@ void loop()
     LoRaMillis = TedMillis;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
